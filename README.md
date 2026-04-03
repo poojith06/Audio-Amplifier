@@ -35,22 +35,18 @@ Report/
 - `4th-stage(pow_amp).asc` - class AB power stage.
 - `final_ckt.asc` - combined final circuit.
 
-## Simulation Notes
+## How to Run
 
 - Open the desired `.asc` file in LTspice.
 - Keep the library files (`UA741.lib`, `tip31a.lib`, `tip32a.lib`) in the same `LTspice/` folder so the symbols can resolve correctly.
 - Run the transient analysis already defined in the schematic.
-- For the filter stage, the report also discusses AC response and cutoff frequencies.
 
 ## Project Summary
 
-The amplifier is designed to process low-amplitude audio signals through a preamp, gain stage, active filter, and power stage. The final circuit was validated in simulation and then implemented in hardware.
+This project implements a multi-stage audio amplifier designed to process low-amplitude input signals through a preamplifier, voltage gain stage, active band-pass filter, and Class AB power amplifier. 
+
+Each stage was individually designed and simulated in LTspice to achieve the desired gain, frequency response, and stability. The complete system was then integrated, verified through simulation, and successfully implemented in hardware.
 
 ## Report
 
 The full write-up, calculations, and results are in `Report/Report.pdf`.
-
-## Requirements
-
-- LTspice installed
-- The included library files available alongside the schematic files
